@@ -1,0 +1,6 @@
+06:55:55 **** Incremental Build of configuration Debug for project RTOSL ****
+make all 
+Cannot run program "make": Unknown reason
+
+06:55:55 Build Finished (took 25ms)
+

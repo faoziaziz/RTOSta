@@ -1,131 +1,33 @@
-00:56:15 **** Build of configuration Debug for project RTOSK ****
-make all 
-Building file: ../startup/startup_stm32f407xx.s
-Invoking: MCU GCC Assembler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32f407xx.o" "../startup/startup_stm32f407xx.s"
-Finished building: ../startup/startup_stm32f407xx.s
- 
-Building file: ../Src/main.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
-Finished building: ../Src/main.c
- 
-Building file: ../Src/stm32f4xx_hal_msp.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" -o "Src/stm32f4xx_hal_msp.o" "../Src/stm32f4xx_hal_msp.c"
-Finished building: ../Src/stm32f4xx_hal_msp.c
- 
-Building file: ../Src/stm32f4xx_it.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_it.d" -MT"Src/stm32f4xx_it.o" -o "Src/stm32f4xx_it.o" "../Src/stm32f4xx_it.c"
-Finished building: ../Src/stm32f4xx_it.c
- 
-Building file: ../Src/system_stm32f4xx.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" -o "Src/system_stm32f4xx.o" "../Src/system_stm32f4xx.c"
-Finished building: ../Src/system_stm32f4xx.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
- 
-Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
-Invoking: MCU GCC Compiler
-/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed="__attribute__((__packed__))"' -DUSE_HAL_DRIVER -DSTM32F407xx -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"/home/faoziaziz/Documents/ngoprek/ta/RTOSK/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c"
-Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
- 
-Building target: RTOSK.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F407VGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "RTOSK.elf" @"objects.list"   -lm
-Finished building target: RTOSK.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "RTOSK.elf" "RTOSK.bin"
-arm-none-eabi-size "RTOSK.elf"
-   text	   data	    bss	    dec	    hex	filename
-   3720	     20	   1572	   5312	   14c0	RTOSK.elf
- 
+08:12:47 **** Programming project RTOSK on chip ****
+/home/faoziaziz/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.openocd.linux64_1.17.0.201801121207/tools/openocd/bin/openocd -f stm32.flash.670913688258908946.cfg -s /home/faoziaziz/Documents/ngoprek/ta/RTOSK -s /home/faoziaziz/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.debug_2.1.4.201801121207/resources/openocd/st_scripts -c "program Debug/RTOSK.elf verify exit" 
+Open On-Chip Debugger 0.10.0-dev-00007-g58350bc-dirty (2018-01-12-12:14)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Warn : Could not determine executable path, using configured BINDIR.
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter_nsrst_delay: 100
+adapter speed: 1800 kHz
+Info : clock speed 1800 kHz
+Info : STLINK v2 JTAG v21 API v2 SWIM v4 VID 0x0483 PID 0x3748
+Info : vid/pid are not identical: 0x0483/0x374B 0x0483/0x3748
+Info : using stlink api v2
+Info : Target voltage: 3.225841
+Error: Unable to set adapter speed
+Info : STM32F407VGTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Error: Unable to set adapter speed
+adapter speed: 1800 kHz
+Error: jtag status contains invalid mode value - communication failure
+TARGET: STM32F407VGTx.cpu - Not halted
+in procedure 'program' 
+in procedure 'reset' called at file "embedded:startup.tcl", line 490
+in procedure 'ocd_bouncer'
 
-00:56:34 Build Finished (took 19s.99ms)
+Info : Previous state query failed, trying to reconnect
+** Unable to reset target **
+shutdown command invoked
+
+
+08:12:48 Build Finished (took 899ms)
 

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="5.4.1 -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=starter.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\starter -TC:\CooCox\CoIDE\configuration\ProgramData\starter/arm-gcc-link.ld -g">
+      <target file="starter.elf" lastModified="16357a8bbd0">
+         <source file="..\obj\stm32f4xx_pwr.o" lastModified="1635393a0f0"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="1635393a0f0"/>
+         <source file="..\obj\main.o" lastModified="16357a8bbd0"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="1635393a8c0"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="1635393a8c0"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="1635393a8c0"/>
+         <source file="..\obj\stm32f4xx_exti.o" lastModified="1635393a8c0"/>
+         <source file="..\obj\misc.o" lastModified="1635393a8c0"/>
+         <source file="..\obj\stm32f4xx_rtc.o" lastModified="1635393a8c0"/>
+         <source file="..\obj\seven.o" lastModified="16357a817c0"/>
+         <source file="..\obj\starter.o" lastModified="16357a817c0"/>
+      </target>
+   </processor>
+</history>

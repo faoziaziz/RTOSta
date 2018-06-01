@@ -1,0 +1,33 @@
+13:58:26 **** Programming project CantikBlink on chip ****
+/home/faoziaziz/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.externaltools.openocd.linux64_1.17.0.201801121207/tools/openocd/bin/openocd -f stm32.flash.2848252052663743516.cfg -s /home/faoziaziz/Documents/ngoprek/ta/CantikBlink/SW4STM32/CantikBlink -s /home/faoziaziz/Ac6/SystemWorkbench/plugins/fr.ac6.mcu.debug_2.1.4.201801121207/resources/openocd/st_scripts -c "program Debug/CantikBlink.elf verify exit" 
+Open On-Chip Debugger 0.10.0-dev-00007-g58350bc-dirty (2018-01-12-12:14)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Warn : Could not determine executable path, using configured BINDIR.
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter_nsrst_delay: 100
+adapter speed: 1800 kHz
+Info : clock speed 1800 kHz
+Info : STLINK v2 JTAG v21 API v2 SWIM v4 VID 0x0483 PID 0x3748
+Info : vid/pid are not identical: 0x0483/0x374B 0x0483/0x3748
+Info : using stlink api v2
+Info : Target voltage: 3.224258
+Error: Unable to set adapter speed
+Info : STM32F407VGTx.cpu: hardware has 6 breakpoints, 4 watchpoints
+Error: Unable to set adapter speed
+adapter speed: 1800 kHz
+Error: jtag status contains invalid mode value - communication failure
+TARGET: STM32F407VGTx.cpu - Not halted
+in procedure 'program' 
+in procedure 'reset' called at file "embedded:startup.tcl", line 490
+in procedure 'ocd_bouncer'
+
+Info : Previous state query failed, trying to reconnect
+** Unable to reset target **
+shutdown command invoked
+
+
+13:58:28 Build Finished (took 1s.609ms)
+

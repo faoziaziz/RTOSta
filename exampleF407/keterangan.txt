@@ -1,0 +1,19 @@
+cara setting boot0 boot1. 
+(di board nya, pin boot0 dan boot1 di pullup dengan R10k jadi nanti "tidak" boot dari flash meskipun sudah diprogram.)
+
+1.untuk boot dari flash (penggunaan normal) boot0 di pulldown (pin boot0 disambung/dijumper ke GND).
+
+2.untuk bisa DFU boot1 saja yang di pulldown, jadi nanti bisa download lewat USB. setelah downlaod selesai nanti boot0 di pulldown, biar boot dari flash. (ada appnote nya dari st atau cari di google juga bisa)
+
+3.untuk boot dari RAM (biasanya di set 128KB jadi system(rom) dan 64kb jadi ram), tidak perlu diapa2kan sudah di pullup semua boot0 dan boot1. Hanya perlu nambah di code nya untuk keperluan boot dari RAM dan mengganti start adress ke area 0x20000000 (bisa dicari di google, tiap development tool beda2).  dalam hal ini flash 1MB tidak dipakai sama sekali. biasa dipakai untuk keperluan debug.
+
+4. crystal : 8MHz, onboard led : PE0 (nyala pas low), onboard pushbutton : PD15 (low pas dipencet)
+
+
+starter code:
+berisi code (coIDE) untuk tes crystal (HSE dan LSE).
+bisa langsung di download file hex nya dengan downloader ke mikro. 
+
+jika HSE (8MHz) normal, led akan hidup 1detik dan mati 1 detik,  
+kemudian pencet push button ~1detik,
+jika led kembali kedip seperti awal, maka LSE (32.768KHz) normal.
